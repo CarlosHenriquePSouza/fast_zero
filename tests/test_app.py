@@ -88,7 +88,7 @@ def test_update_user(client):
             'username': 'testusername2',
             'email': 'test@test.com',
             'id': 1,
-        }
+        },
     )
 
     assert response.status_code == HTTPStatus.OK
@@ -107,7 +107,7 @@ def test_update_user_error_not_found(client):
             'username': 'testusername2',
             'email': 'test@test.com',
             'id': 2,
-        }
+        },
     )
 
     assert response.status_code == HTTPStatus.NOT_FOUND
